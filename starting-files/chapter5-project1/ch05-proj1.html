@@ -1,28 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="utf-8">
-   <title>Chapter 5</title>
-   <link rel="stylesheet" href="reset.css" />
-   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
-   <link rel="stylesheet" href="ch05-proj1.css" />
+     <meta charset="utf-8">
+     <title>Chapter 5</title>
+     <link rel="stylesheet" href="reset.css" />
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+     <link rel="stylesheet" href="ch05-proj1.css" />
 </head>
+
 <body>
 
-    <section>
-         <h3>Data</h3>
-         
-      
-         
-    </section>
-    
-    <section>
-         <h3>Revise</h3>
-         
-        
-    </section>    
+     <section>
+          <h3>Data</h3>
 
+          <div class="tophalf">
+               <table class="toptable">
+                    <caption class="title">Orders</caption>
+                    <tr>
+                         <th>Id</th>
+                         <th>Date</th>
+                         <th>Customer</th>
+                         <th>Country</th>
+                         <th>Progress</th>
+                         <th>Status</th>
+                    </tr>
+                    <tr>
+                         <td>123</td>
+                         <td>Sept 12, 2017</td>
+                         <td>Jean Rousseau</td>
+                         <td>France</td>
+                         <td><progress value="9" max="9" class="progressbar">100%</progress></td>
+                         <td>
+                              <p class="shipped">Shipped</p>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>144</td>
+                         <td>Sept 20, 2017</td>
+                         <td>Georg Hegel</td>
+                         <td>Germany</td>
+                         <td><progress value="9" max="9" class="progressbar">100%</progress></td>
+                         <td>
+                              <p class="shipped">Shipped</p>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>149</td>
+                         <td>Oct 3, 2017</td>
+                         <td>John Locke</td>
+                         <td>England</td>
+                         <td><progress value="5" max="9" class="progressbar">100%</progress></td>
+                         <td>
+                              <p class="processing">Processing</p>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>162</td>
+                         <td>Oct 8, 2017</td>
+                         <td>Thomas Hobbes</td>
+                         <td>England</td>
+                         <td><progress value="3" max="9" class="progressbar">100%</progress></td>
+                         <td>
+                              <p class="pending">Pending</p>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>177</td>
+                         <td>Oct 10, 2017</td>
+                         <td>Johann Fichte</td>
+                         <td>Germany</td>
+                         <td><progress value="3" max="9" class="progressbar">100%</progress></td>
+                         <td>
+                              <p class="pending">Pending</p>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+
+
+     </section>
+
+     <section>
+          <h3>Revise</h3>
+          <form action="process.php" class="bottomhalf" method="GET">
+               <fieldset>
+                    <legend class="ordertitle">Filter Orders</legend><br>
+                    <label class="orderlabel">Customer</label><br>
+                    <input type="text" id="customer_name" name="name" placeholder="Enter name" class="inputtextorder"><br><br>
+                    <label class="orderlabel">Country</label><br>
+                    <select class="selectorder" name="Choose your country" id="country">
+                         <option value="" disabled selected hidden>Choose a country</option>
+                         <option>Canada</option>
+                         <option>United States</option>
+                         <option>Mexico</option>
+                    </select><br><br>
+                    <label class="orderlabel">Status</label><br>
+                    <input type="radio" id="pendingid" name="status" value="pending">Pending
+                    <input type="radio" id="processingid" name="status" value="processing">Processing
+                    <input type="radio" id="shippedid" name="status" value="shipped">Shipped
+                    <br><br>
+                    <label class="orderlabel">Order Date</label><br>
+                    <input type="date" class="inputdateorder"><br><br>
+                    <input type="submit" value="Submit" class="submitorder">
+               </fieldset>
+          </form>
+     </section>
 
 </body>
 </html>

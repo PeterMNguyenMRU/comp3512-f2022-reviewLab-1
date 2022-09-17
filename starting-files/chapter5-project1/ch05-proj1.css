@@ -2,42 +2,152 @@
 
 
 body {
-   font-family: "Roboto", Verdana, Arial, sans-serif;
-   font-size: 100%;
- background-color: #ECEFF1;    
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    background-color: #ECEFF1;
 }
 
 section {
-   background-color: white;
-   margin: 1em 4em 1em 4em;
-   border: solid 1pt black;
+    background-color: white;
+    margin: 1em 4em 1em 4em;
+    border: solid 1pt black;
 
 }
+
 section h3 {
-  color: white;
-  padding: 0.75rem;
-  background-color: #263238; 
+    color: white;
+    padding: 0.75rem;
+    background-color: #263238;
 }
 
 .status {
     border-radius: 0.25rem;
     padding: 3px;
     color: white;
-    
+
 }
+
 .status-processing {
-    background-color:    #E65100;    
+    background-color: #E65100;
 }
+
 .status-shipped {
-    background-color:   #4CAF50;    
+    background-color: #4CAF50;
 }
+
 .status-pending {
-    background-color:    #03A9F4;    
+    background-color: #03A9F4;
 }
 
 
 
 /* table formatting -- you will add these */
 
+.tophalf {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: auto;
+}
 
+.toptable {
+    width: 100%;
+    text-align: left;
+}
 
+.title {
+    text-align: center;
+    padding: 15px;
+    background-color: #607D8B;
+    color: white;
+}
+
+/* table rows */
+th {
+    padding: 15px;
+    font-size: 18px;
+}
+
+td {
+    padding: 15px;
+}
+
+.shipped {
+    color: white;
+    background-color: green;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.processing {
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pending {
+    color: white;
+    background-color: #03A9F4;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.progressbar {
+    width: 90%;
+    height: 20px;
+    color: #8cace0;
+    background-color: white;
+}
+
+/* Order form */
+
+.bottomhalf {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    width: 95%;
+}
+
+.ordertitle {
+    text-align: center;
+    background-color: #607D8B;
+    color: white;
+    padding: 10px;
+    width: 99%;
+}
+
+.orderlabel {
+    font-weight: 600;
+}
+
+/* Form inputs */
+.inputtextorder {
+    padding: 5px;
+}
+
+.selectorder {
+    padding: 5px;
+}
+
+.inputdateorder {
+    padding: 5px;
+}
+
+.submitorder {
+    padding: 15px;
+    width: 6%;
+    border: none;
+    color: white;
+    background-color: rebeccapurple;
+}

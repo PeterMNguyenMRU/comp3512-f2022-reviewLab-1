@@ -1,0 +1,36 @@
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container1 {
+    display: grid;
+    max-width: 100%;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding-top: 4px;
+    overflow: hidden;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 2px;
+    overflow: hidden;
+}
+
+p.name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.other {
+    font-style: italic;
+}
+
+a.other {
+    font-style: italic;
+}
